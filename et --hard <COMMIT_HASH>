@@ -1,0 +1,48 @@
+[33m91cfaa7[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m model weight backup
+[33m7c3458a[m[33m ([m[1;33mtag: v0.1[m[33m)[m fix dist_video bug
+[33mc64790a[m fix dist_video bug
+[33m34feb78[m add multi-gpu test
+[33m04f394c[m add multi-gpu test
+[33mb80210e[m Update misc.py
+[33m4bfaee6[m Update misc.py
+[33me80d725[m Merge pull request #49 from simonwu53/fix-torchvision-version-check
+[33m706184a[m Merge branch 'main' into fix-torchvision-version-check
+[33m4236e34[m Merge pull request #50 from Abrahamon/feature/update-funcs
+[33m214c052[m fix an error caused by double digits of torchvision minor version number
+[33md339429[m update two_stage
+[33m52e99ee[m Update funcs
+[33m30b6f08[m update log saving
+[33m788391e[m Update README.md
+[33m3f0ed9d[m enable amp training
+[33m8b7c0b1[m Update demo.py
+[33me0c2b37[m add demo.py
+[33m8604bb8[m Create demo.py
+[33mbf8dbd1[m update reid_loss_coef
+[33m68f8604[m add reid
+[33m51e3503[m add reid
+[33mc2cdbd8[m add reid loss
+[33m83fb7ac[m add reid
+[33mfa689ba[m add track_id
+[33mccdacd6[m Merge pull request #32 from ifzhang/main
+[33mdda6ede[m evaluate every 10 epochs
+[33m93d6d71[m Merge pull request #26 from ifzhang/main
+[33m7fb4727[m support evaluation of the training set
+[33mdcc40c5[m Update mot_trainhalf.sh
+[33mf74729f[m update tracker
+[33mb738680[m update arxiv
+[33m2e6d282[m add mot test set
+[33m08a425d[m update readme
+[33me4fa37e[m update readme
+[33m223078c[m crowdhuman_pretrain_on_track
+[33m40397cc[m Update txt2video.py
+[33ma117ebe[m mix crowdhuman&mot
+[33maf233e4[m add test visualization
+[33m90e9676[m crowdhuman ann
+[33m18a2abf[m convert model
+[33m1c3b9dc[m code refactoring
+[33ma806a78[m code refactoring
+[33mfa29e4f[m update .gitignore
+[33me9f83f1[m release code
+[33m64cbd89[m add demo
+[33m365a991[m add visualization
+[33mf08c0a0[m add visualization
