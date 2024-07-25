@@ -216,10 +216,16 @@ class DeformableTransformerEncoderLayer(nn.Module):
                  checkpoint_ffn=False):
         super().__init__()
 
+        
+        # # self attention
+        # self.self_attn = MSDeformAttn(d_model, n_levels, n_heads, n_points)
+        # self.dropout1 = nn.Dropout(dropout)
+        # self.norm1 = nn.LayerNorm(d_model)
         # self attention
+        self.norm1 = nn.LayerNorm(d_model)
         self.self_attn = MSDeformAttn(d_model, n_levels, n_heads, n_points)
         self.dropout1 = nn.Dropout(dropout)
-        self.norm1 = nn.LayerNorm(d_model)
+        
 
         # ffn
         self.linear1 = nn.Linear(d_model, d_ffn)
@@ -298,11 +304,23 @@ class DeformableTransformerDecoderLayer(nn.Module):
         self.cross_attn = MSDeformAttn(d_model, n_levels, n_heads, n_points)
         self.dropout1 = nn.Dropout(dropout)
         self.norm1 = nn.LayerNorm(d_model)
+        #  # cross attention
+        # self.norm1 = nn.LayerNorm(d_model)
+        # self.cross_attn = MSDeformAttn(d_model, n_levels, n_heads, n_points)
+        # self.dropout1 = nn.Dropout(dropout)
+        
 
         # self attention
         self.self_attn = nn.MultiheadAttention(d_model, n_heads, dropout=dropout)
         self.dropout2 = nn.Dropout(dropout)
         self.norm2 = nn.LayerNorm(d_model)
+        
+        # self attention
+        # self.norm2 = nn.LayerNorm(d_model)
+        # self.self_attn = nn.MultiheadAttention(d_model, n_heads, dropout=dropout)
+        # self.dropout2 = nn.Dropout(dropout)
+        
+        
 
         # ffn
         self.linear1 = nn.Linear(d_model, d_ffn)

@@ -28,7 +28,8 @@ if __name__ == '__main__':
         data_path = DATA_PATH + split
         out_path = OUT_PATH + '{}.json'.format(split)
         out = {'images': [], 'annotations': [], 'categories': [{'id': 1, 'name': 'person'}]}
-        ann_path = DATA_PATH + 'annotation_{}.odgt'.format(split)
+        ann_path = DATA_PATH +'annotation_{}.odgt'.format(split)
+        print('ann_path',ann_path)
         anns_data = load_func(ann_path)
         image_cnt = 0
         ann_cnt = 0

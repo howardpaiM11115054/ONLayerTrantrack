@@ -3,3 +3,5 @@ tqdm
 cython
 scipy
 motmetrics
+wandb
+timm
