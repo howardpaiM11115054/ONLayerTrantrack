@@ -4,13 +4,22 @@
 
 
 ## Introduction
- We mentioned the concept of On-layer-normalization. Changing
+We mentioned the concept of On-layer-normalization. Changing
 the structure of the Transformer in the model can effectively improve the accuracy and
 optimize traniing time. We also tested the Decoder and Encoder separately and found that
 On-layer normalization can be powerful under the Encoder. We will take the best results
 when we set epochs to 150 and do the layer-normalization in Encoder . We achieved a
 5.1% time reduction and a 3.1% improvement in IDF1.
 
+
+<img src="assets/onlayerorm.png" width="400"/>  
+
+## Architecture detial
+ased on the changes to the transformer in the article On Layer Normalization in
+the Transformer Architecture , we refined the architecture of Deformable-detr in
+TransTrack
+
+<img src="assets/Encoderplus.png" width="400"/>  <img src="assets/encoderplus1.png" width="400"/>
 ## MOT challenge
 Dataset | MOTA% | IDF1% | IDP% |IDR% |FP | FN | IDS 
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
