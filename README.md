@@ -44,7 +44,7 @@ cd ../..
 pip install -r requirements.txt
 ```
 
-2. Prepare datasets and annotations
+2. Prepare datasets
 ```
 mkdir crowdhuman
 cp -r /path_to_crowdhuman_dataset/CrowdHuman_train crowdhuman/CrowdHuman_train
@@ -69,18 +69,18 @@ python3 main_track.py  --output_dir ./output_crowdhuman --dataset_file crowdhuma
 ```
 
 
-4. Train TransTrack
+4. Train ONLTransTrack
 ```
 sh track_exps/crowdhuman_mot_trainhalf.sh
 ```
 
-5. Evaluate TransTrack
+5. Evaluate ONLTransTrack
 ```
 sh track_exps/mot_val.sh
 sh track_exps/mota.sh
 ```
 
-6. Visualize TransTrack
+6. Video for ONLTransTrack
 ```
 python3 track_tools/txt2video.py
 ```
@@ -96,10 +96,10 @@ python3 track_tools/txt2video.py
 
 ## Citing
 
-If you use TransTrack in your research or wish to refer to the baseline results published here, please use the following BibTeX entries:
+
 
 ```BibTeX
 
-@
+
 
 ```
