@@ -36,7 +36,7 @@ The codebases are built on top of [Deformable DETR](https://github.com/fundament
 #### Steps
 1. Install and build libs
 ```
-git clone https://github.com/PeizeSun/TransTrack.git
+git clone git@github.com:howardpaiM11115054/ONLayerTrantrack.git
 cd TransTrack
 cd models/ops
 python setup.py build install
