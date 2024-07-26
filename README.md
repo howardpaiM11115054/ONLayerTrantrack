@@ -28,7 +28,7 @@ The codebases are built on top of [Deformable DETR](https://github.com/fundament
 #### Requirements
 - Linux, CUDA>=9.2, GCC>=5.4
 - Python>=3.7
-- PyTorch ≥ 1.5 and [torchvision](https://github.com/pytorch/vision/) that matches the PyTorch installation.
+- PyTorch ≥ 1.5 
   You can install them together at [pytorch.org](https://pytorch.org) to make sure of this
 - OpenCV is optional and needed by demo and visualization
 
