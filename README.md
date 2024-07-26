@@ -20,13 +20,22 @@ the Transformer Architecture , we refined the architecture of Deformable-detr in
 TransTrack
 
 <img src="assets/Encoderplus.png" width="400"/>  
+
+
 ## MOT challenge
-Dataset | MOTA% | IDF1% | IDP% |IDR% |FP | FN | IDS 
-:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-MOT17 |  53.5 | 52.8| 65.9 |44.0 | 3102 |21017| 929
 
+|Dataset | MOTA% | IDF1% | IDP% |IDR% |FP   | FN  | IDS |
+|:---:   |:---:  |:---:  |:---: |:---:|:---:|:---:|:---:|
+|MOT17   |  53.5 | 52.8  | 65.9 |44.0 | 3102|21017| 929|
 
-
+##  Parameters for training
+The hardware detail is on one RTX 4090.
+Activation Function |num
+|:---:   |:---:  |
+batch_size |2
+num_queries |500
+epochs |150
+lr_drop |100
 ## Demo
 <img src="assets/MOT17-11.gif" width="400"/> <img src="assets/MOT17-04.gif" width="400"/>
 
