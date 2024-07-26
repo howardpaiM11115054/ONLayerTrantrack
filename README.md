@@ -19,7 +19,7 @@ ased on the changes to the transformer in the article On Layer Normalization in
 the Transformer Architecture , we refined the architecture of Deformable-detr in
 TransTrack
 
-<img src="assets/Encoderplus.png" width="400"/>  <img src="assets/encoderplus1.png" width="400"/>
+<img src="assets/Encoderplus.png" width="400"/>  
 ## MOT challenge
 Dataset | MOTA% | IDF1% | IDP% |IDR% |FP | FN | IDS 
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
@@ -28,7 +28,7 @@ MOT17 |  53.5 | 52.8| 65.9 |44.0 | 3102 |21017| 929
 
 
 ## Demo
-<img src="assets/MOT17-11.gif" width="400"/>  <img src="assets/MOT17-04.gif" width="400"/>
+<img src="assets/MOT17-11.gif" width="400"/> <img src="assets/MOT17-12.gif" width="400"/>
 
 
 ## Installation
