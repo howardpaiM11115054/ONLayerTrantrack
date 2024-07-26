@@ -4,9 +4,12 @@
 
 
 ## Introduction
-
-
-  
+ We mentioned the concept of On-layer-normalization. Changing
+the structure of the Transformer in the model can effectively improve the accuracy and
+optimize traniing time. We also tested the Decoder and Encoder separately and found that
+On-layer normalization can be powerful under the Encoder. We will take the best results
+when we set epochs to 150 and do the layer-normalization in Encoder . We achieved a
+5.1% time reduction and a 3.1% improvement in IDF1.
 
 ## MOT challenge
 Dataset | MOTA% | IDF1% | IDP% |IDR% |FP | FN | IDS 
@@ -62,7 +65,7 @@ python3 track_tools/convert_mot_to_coco.py
 3. Pre-train on crowdhuman
 ```
 sh track_exps/crowdhuman_train.sh
-python3 track_tools/crowdhuman_model_to_mot.py
+python3 main_track.py  --output_dir ./output_crowdhuman --dataset_file crowdhuman --coco_path crowdhuman --batch_size 2  --with_box_refine --num_queries 500 --epochs 150 --lr_drop 100 
 ```
 The pre-trained model is available [crowdhuman_final.pth](https://drive.google.com/drive/folders/1DjPL8xWoXDASrxgsA3O06EspJRdUXFQ-?usp=sharing).
 
