@@ -67,7 +67,7 @@ python3 track_tools/convert_mot_to_coco.py
 sh track_exps/crowdhuman_train.sh
 python3 main_track.py  --output_dir ./output_crowdhuman --dataset_file crowdhuman --coco_path crowdhuman --batch_size 2  --with_box_refine --num_queries 500 --epochs 150 --lr_drop 100 
 ```
-The pre-trained model is available [crowdhuman_final.pth](https://drive.google.com/drive/folders/1DjPL8xWoXDASrxgsA3O06EspJRdUXFQ-?usp=sharing).
+
 
 4. Train TransTrack
 ```
