@@ -118,6 +118,11 @@ python3 track_tools/txt2video.py
 
 ```BibTeX
 
-
+@article{transtrack,
+  title   =  {TransTrack: Multiple-Object Tracking with Transformer},
+  author  =  {Peize Sun and Jinkun Cao and Yi Jiang and Rufeng Zhang and Enze Xie and Zehuan Yuan and Changhu Wang and Ping Luo},
+  journal =  {arXiv preprint arXiv: 2012.15460},
+  year    =  {2020}
+}
 
 ```
