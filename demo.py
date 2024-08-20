@@ -14,7 +14,6 @@ import torchvision.transforms.functional as F
 import glob as gb
 import os
 import cv2
-
 from models import build_tracktest_model
 from models import Tracker
 import datasets.transforms as T
