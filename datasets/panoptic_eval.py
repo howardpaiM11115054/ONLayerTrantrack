@@ -1,7 +1,6 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
 import json
 import os
-
 import util.misc as utils
 
 try:
