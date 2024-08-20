@@ -14,7 +14,6 @@ import math
 import os
 import sys
 from typing import Iterable
-
 import torch
 import util.misc as utils
 from datasets.coco_eval import CocoEvaluator
